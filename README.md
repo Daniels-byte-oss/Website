@@ -14,6 +14,16 @@ Description
 * ~~**Resursu pārvaldība:**~~ [Izmests: Tas prasa papildu darbu ar datu vizualizāciju un sarežģītiem datubāzes pieprasījumiem.]
 * ~~Analītikas modulis:~~ [Izmests: Tas sarežģī datubāzes struktūru (jāveido saraksti ar bumbām, tīkliem utt.) un rezervācijas formu.]
 
+### V-Modeļa testa plāns (Kvalitātes kontrole)
+
+| Funkcija | Testa darbība (Kā mēs pārbaudīsim?) | Sagaidāmais rezultāts |
+| :--- | :--- | :--- |
+| Lietotāju autorizācija | Ievadiet derīgu lietotājvārdu un paroli pieteikšanās formā un nospiediet pogu "Pieslēgties". | Lietotājs tiek veiksmīgi autentificēts un novirzīts uz sistēmas sākumlapu. |
+| Interaktīvs kalendārs | Atveriet kalendāra sadaļu un pārbaudiet, vai tajā ir redzamas jau eksistējošas rezervācijas. | Kalendārs ielādējas veiksmīgi, skaidri parādot aizņemtos un brīvos laikus. |
+| Rezervācijas veidne | Aizpildiet rezervācijas formu ar derīgiem datiem (datums, laiks, pasākums) un nospiediet "Rezervēt". | Dati tiek saglabāti sistēmā un rezervācija parādās kā gaidoša (neapstiprināta). |
+| Administratora panelis | Pieslēdzieties kā administrators, atveriet rezervāciju sarakstu un nospiediet "Apstiprināt" vai "Atcelt". | Sistēma nomaina un saglabā izvēlētās rezervācijas statusu. |
+| Paziņojumu sistēma | Pārbaudiet lietotāja e-pastu/profilu pēc tam, kad administrators ir apstiprinājis iepriekš izveidoto rezervāciju. | Lietotājs automātiski saņem paziņojumu par apstiprinātu rezervāciju. |
+
 ### 3. Izmantotie rīki un metodes
 * **Plānošanas rīks:** Trello
 * **Versiju kontrole:** GitHub
