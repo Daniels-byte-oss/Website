@@ -24,6 +24,14 @@ Description
 | Administratora panelis | Pieslēdzieties kā administrators, atveriet rezervāciju sarakstu un nospiediet "Apstiprināt" vai "Atcelt". | Sistēma nomaina un saglabā izvēlētās rezervācijas statusu. |
 | Paziņojumu sistēma | Pārbaudiet lietotāja e-pastu/profilu pēc tam, kad administrators ir apstiprinājis iepriekš izveidoto rezervāciju. | Lietotājs automātiski saņem paziņojumu par apstiprinātu rezervāciju. |
 
+### Spirāles modeļa risku analīze
+Šajā posmā mēs identificējam iespējamos projektus apdraudējumus un sagatavojam rīcības plānu to novēršanai saistībā ar sporta zāles rezervācijas sistēmu.
+
+* **1. Tehniskais risks:** Rezervāciju konflikti jeb dubultā rezervācija (piemēram, divi lietotāji vienlaicīgi mēģina pieteikties uz vienu un to pašu brīvo laiku).
+* **Risinājums:** Ieviest datubāzes līmeņa transakciju kontroli (bloķēšanu) un reāllaika kalendāra atjaunināšanu. Brīdī, kad viens lietotājs uzsāk rezervācijas procesu, sistēmai šis laiks īslaicīgi jāpadara nepieejams citiem.
+* **2. Drošības risks:** Nepilnīga lietotāju lomu nošķiršana (piemēram, skolēns netīšām iegūst piekļuvi administratora panelim un var atcelt citu rezervācijas).
+* **Risinājums:** Stingri definēt lietotāju lomas (audzēknis, personāls, administrators) un ieviest obligātas sesijas/piekļuves tiesību pārbaudes servera pusē pirms jebkuras darbības, kas saistīta ar rezervāciju rediģēšanu vai apstiprināšanu.
+  
 ### 3. Izmantotie rīki un metodes
 * **Plānošanas rīks:** Trello
 * **Versiju kontrole:** GitHub
