@@ -11,6 +11,8 @@ Description
 * **Rezervācijas veidne:** [Vienkārša forma "bronešānai", norādot laiku, datumu un pasākuma veidu.]
 * **Administratora panelis:** [Iespēja apstiprināt, atcelt vai rediģēt lietotāju veiktās rezervācijas.]
 * **Paziņojumu sistēma:** [Automātiski e-pasta vai sistēmas paziņojumi par apstiprinātu rezervāciju.]
+* **Resursu pārvaldība:** [Papildu aprīkojuma (bumbu, tīklu, paklāju) pieteikšana kopā ar zāles rezervāciju.]
+* **Analītikas modulis:** [Atskaites par sporta zāles noslodzi un populārākajiem rezervācijas laikiem.]
 
 ### 3. Izmantotie rīki un metodes
 * **Plānošanas rīks:** Trello
